@@ -1,0 +1,51 @@
+/* Сброс отступов и базовые стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Контейнер языков */
+.language-selection {
+  display: flex;
+  gap: 4vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Каждый язык */
+.language-item {
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Стили флага */
+.flag {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.flag:hover {
+  transform: scale(1.15);
+}
+
+/* Подпись под флагом */
+.language-text {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
